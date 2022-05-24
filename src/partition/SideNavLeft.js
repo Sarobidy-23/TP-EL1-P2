@@ -17,27 +17,23 @@ function SideNavLeft(){
     
                      {/* Interface */}
                     <div class="sb-sidenav-menu-heading">Interface</div>
-                    <NavLinkCollapsed link='#' label='Layouts'/>
+                    <NavLinkCollapsed DataBsTarget="#collapseLayouts" ClassIcon="fas fa-columns" link='#' label='Layouts'/>
                     <CollapseNav id="collapseLayouts">
                         <NavLink link="layout-static.html" label="Static Navigation"/>
                         <NavLink link="layout-sidenav-light.html" label="Light Sidenav"/>
                     </CollapseNav>
-                    <NavLinkCollapsed link='#' label='pages'/>
+                    <NavLinkCollapsed  DataBsTarget="#collapsePages" ClassIcon="fas fa-book-open" link='#' label='Pages'/>
                     <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                           <NavLinkCollapsed link='#' label='Authentifiaction'/>
+                           <NavLinkCollapsed DataBsTarget="#pagesCollapseAuth" link='#' label='Authentifiaction'/>
                             
                             <CollapseNav id="pagesCollapseAuth">
                                 <NavLink link="login.html" label="Login"/>
                                 <NavLink link="register.html" label="Register"/>
                                 <NavLink link="password.html" label="Forgot Password"/>
                             </CollapseNav>
-                            
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Error
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            
+                         
+                            <NavLinkCollapsed DataBsTarget="#pagesCollapseError" link="#" label="error"/>
                                 <CollapseNav id="pagesCollapseError">
                                     <NavLink link="401.html" label="401 Page"/>
                                     <NavLink link="404.html" label="404 Page"/>

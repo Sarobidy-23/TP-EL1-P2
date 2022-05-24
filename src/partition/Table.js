@@ -2,10 +2,11 @@ import TableBody from "./TableBody";
 import CarHeader from "./CardHeader";
 import CardBody from "./CardBody";
 import TableHead from "./TableHead";
+import Card from "./Card";
 
 function Table(){
     return (
-        <div>
+        <Card>
             <CarHeader label='DataTable Example'/>
             <CardBody>               
                 <thead>
@@ -74,7 +75,7 @@ function Table(){
                     <TableBody label1="Donna Snider" label2="Customer Support" label3="New York" label4="27" label5="2011/01/25" label6="$112,000" />   
                 </tbody>
             </CardBody>
-        </div>
+        </Card>
     );
 };
 export default Table;

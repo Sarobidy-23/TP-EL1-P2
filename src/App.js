@@ -17,6 +17,7 @@ function App() {
         <div id="layoutSidenav">    
             <SideNavLeft/>
             <div id="layoutSidenav_content">
+                <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Tables</h1>
     
@@ -29,11 +30,9 @@ function App() {
                                 <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>.
                             </DataTable>
                         </Card>
-
-                        <Card>
-                            <Table/>
-                        </Card>
+                        <Table/>
                     </div>
+                </main>
                 <Footer/>
             </div>
         </div>
